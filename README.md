@@ -161,8 +161,8 @@ This Node-RED module is based on the great work of **georgesmith46** - [georgesm
 
 ## Changelog
 
-### v0.0.1 (latest)
+### v1.0.0 (latest)
 
-* Initial Build
+* Initial Release
 * IATA BCBP Decode Function
 * IATA BCBP Encode Function
