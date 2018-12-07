@@ -1,0 +1,29 @@
+﻿<script type="text/javascript">
+    RED.nodes.registerType('Encode BCBP', {
+        category: 'IATA',
+        color: '#A6BBCF',
+        defaults: {
+            name: { value: "" },
+            action: { value: "encode" }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "hash.png",
+        label: function () {
+            return this.name || "Encode BCBP";
+        },
+        inputLabels: "Boarding Pass String Value",
+        outputLabels: ["Encoded BCBP"]
+    });
+</script>
+<script type="text/x-red" data-template-name="Encode BCBP">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="Encode BCBP" data-lang="en-US">
+    <p><span >A node that allows you to Encode IATA Resolution 792 Compliant Borading Pass Data.</span></p>
+    <p><span >This node will encode the boarding pass object data from <code>msg.payload</code> and output it as a string.</span></p>
+
+</script>
